@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A896B2"
+    tools:context=".RegistrationActivity">
+
+    <!-- Image at the top center -->
+    <ImageView
+        android:id="@+id/topImage"
+        android:layout_width="75dp"
+        android:layout_height="97dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/heart"
+        tools:ignore="ContentDescription" />
+
+    <!-- Student Name input field -->
+
+    <EditText
+        android:id="@+id/studentNameInput"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/topImage"
+        android:layout_marginTop="50dp"
+        android:hint="Student Name"
+        android:drawableStart="@drawable/ic_person"
+        android:inputType="text"
+        android:padding="12dp"
+        tools:ignore="HardcodedText,TextContrastCheck,VisualLintTextFieldSize"
+        android:autofillHints="" />
+
+    <!-- Student ID input field -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/studentIdInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/studentNameInput"
+        android:layout_marginTop="16dp"
+        android:hint="Student ID"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        tools:ignore="HardcodedText">
+
+        <EditText
+            android:id="@+id/studentIdInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints=""
+            android:inputType="text"
+            android:minHeight="50dp"
+            android:padding="12dp"
+            android:textColorHint="#311B92"
+            tools:ignore="VisualLintTextFieldSize,TextContrastCheck" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Email TextInputLayout with EditText inside -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/emailInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/studentIdInputLayout"
+        android:layout_marginTop="16dp"
+        android:hint="Email"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        tools:ignore="HardcodedText">
+
+        <EditText
+            android:id="@+id/emailInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints=""
+            android:drawableStart="@drawable/ic_email_gray"
+            android:inputType="textEmailAddress"
+            android:minHeight="50dp"
+            android:padding="12dp"
+            android:textColorHint="#311B92"
+            tools:ignore="VisualLintTextFieldSize,TextContrastCheck" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Password TextInputLayout with EditText inside -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/passwordInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/emailInputLayout"
+        android:layout_marginTop="16dp"
+        android:hint="Password"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        tools:ignore="HardcodedText">
+
+        <EditText
+            android:id="@+id/passwordInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints=""
+            android:drawableStart="@drawable/ic_lock_gray"
+            android:inputType="textPassword"
+            android:minHeight="50dp"
+            android:padding="12dp"
+            android:textColorHint="#311B92"
+            tools:ignore="VisualLintTextFieldSize,TextContrastCheck" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <Button
+        android:id="@+id/signUpButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/passwordInputLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:text="Sign Up"
+        android:onClick="signUp"
+        tools:ignore="HardcodedText" />
+
+    <!-- Back button image at the bottom left -->
+    <ImageView
+        android:id="@+id/backButton"
+        android:layout_width="51dp"
+        android:layout_height="96dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="586dp"
+        android:src="@drawable/ic_back_purple"
+        tools:ignore="ContentDescription,ImageContrastCheck" />
+
+
+</RelativeLayout>

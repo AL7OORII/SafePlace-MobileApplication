@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="Lavender">#805F95</color>
+    <color name="MulledWine">#533E60</color>
+    <color name="AmethystSmoke">#A896B2</color>
+    <color name="LightGray">#D9D9D9</color>
+    <color name="LightLavender">#9C80AE</color>
+
+
+
+</resources>

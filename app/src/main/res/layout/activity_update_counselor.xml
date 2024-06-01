@@ -1,0 +1,100 @@
+<!-- activity_update_counselor.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A896B2">
+
+    <!-- Update Counselor Header -->
+    <RelativeLayout
+        android:id="@+id/updateCounselorHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#542A9F"
+        android:padding="16dp">
+
+        <!-- Update Counselor Title -->
+        <TextView
+            android:id="@+id/updateCounselorTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Update Counselor Information"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+    <!-- Back button image at the bottom left -->
+    <ImageView
+        android:id="@+id/backButton"
+        android:layout_width="51dp"
+        android:layout_height="96dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="551dp"
+        android:src="@drawable/ic_back_purple" />
+
+    <!-- Name EditText -->
+    <EditText
+        android:id="@+id/etCounselorName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/updateCounselorHeader"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="16dp"
+        android:hint="Name"
+        android:padding="10dp"
+        android:textColorHint="#837D7D"
+        android:textSize="16sp"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <!-- E-mail EditText -->
+    <EditText
+        android:id="@+id/etCounselorEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etCounselorName"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="16dp"
+        android:hint="E-mail"
+        android:inputType="textEmailAddress"
+        android:padding="10dp"
+        android:textColorHint="#837D7D"
+        android:textSize="16sp"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <!-- Description EditText -->
+    <EditText
+        android:id="@+id/etCounselorDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etCounselorEmail"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="16dp"
+        android:hint="Description"
+        android:padding="10dp"
+        android:textColorHint="#837D7D"
+        android:textSize="16sp"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <!-- Update Button -->
+    <Button
+        android:id="@+id/btnUpdateCounselor"
+        android:layout_width="194dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etCounselorDescription"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="16dp"
+        android:padding="12dp"
+        android:text="Update"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp" />
+
+</RelativeLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A896B2"
+    tools:context=".MainActivity">
+
+    <!-- Sentence about mental health -->
+    <TextView
+        android:id="@+id/mentalHealthSentence"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:text="Your mental health is just as important as your physical health"
+        android:textAlignment="center"
+        android:textSize="16sp" />
+
+    <!-- Log in as sentence -->
+    <TextView
+        android:id="@+id/loginAsText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mentalHealthSentence"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:text="Log in as"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <!-- Log in as Student button -->
+    <Button
+        android:id="@+id/loginStudentButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/loginAsText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:onClick="loginAsStudent"
+        android:text=" Student" />
+
+    <!-- Log in as Admin button -->
+    <Button
+        android:id="@+id/loginAdminButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/loginStudentButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:onClick="loginAsAdmin"
+        android:text=" Admin" />
+
+    <!-- Image at the bottom center -->
+    <ImageView
+        android:id="@+id/bottomImage"
+        android:layout_width="154dp"
+        android:layout_height="247dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/mentalhealth" />
+
+</RelativeLayout>

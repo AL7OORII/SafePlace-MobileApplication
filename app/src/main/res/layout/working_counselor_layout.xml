@@ -1,0 +1,46 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+            <!-- Counselor Name -->
+            <TextView
+                android:id="@+id/counselorName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name: "
+                android:textSize="18sp"
+                android:textColor="#000000" />
+
+            <!-- Counselor Email -->
+            <TextView
+                android:id="@+id/counselorEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email: "
+                android:textSize="16sp"
+                android:textColor="#555555"
+                android:layout_marginTop="8dp" />
+
+            <!-- Counselor Description -->
+            <TextView
+                android:id="@+id/counselorDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Description: "
+                android:textSize="14sp"
+                android:textColor="#000000"
+                android:layout_marginTop="8dp" />
+
+            <!-- Button for Available Time Slots -->
+            <Button
+                android:id="@+id/availableTimeSlotsButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Available Time Slots" />
+
+</LinearLayout>
+

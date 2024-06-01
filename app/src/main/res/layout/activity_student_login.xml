@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A896B2"
+    tools:context=".StudentLoginActivity">
+
+    <!-- Sentence about mental health -->
+    <TextView
+        android:id="@+id/mentalHealthSentence"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        android:text="Your mental health is just as important as your physical health"
+        android:textColor="#263238"
+        android:textSize="14sp"
+        tools:ignore="HardcodedText" />
+
+    <!-- Email TextInputLayout with EditText inside -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/emailInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mentalHealthSentence"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:hint="Email"
+        tools:ignore="HardcodedText">
+
+        <EditText
+            android:id="@+id/emailInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="50dp"
+            android:drawableStart="@drawable/ic_email_gray"
+            android:autofillHints=""
+            android:inputType="textEmailAddress"
+            android:padding="12dp"
+            android:textColorHint="#263238"
+            tools:ignore="LabelFor,TextContrastCheck,VisualLintTextFieldSize" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Password TextInputLayout with EditText inside -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/passwordInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/emailInputLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:hint="Password"
+        tools:ignore="HardcodedText">
+
+        <EditText
+            android:id="@+id/passwordInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="50dp"
+            android:drawableStart="@drawable/ic_lock_gray"
+            android:inputType="textPassword"
+            android:padding="12dp"
+            android:textColorHint="#263238"
+            tools:ignore="LabelFor,TextContrastCheck,VisualLintTextFieldSize"
+            android:autofillHints="" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <!-- Log In button -->
+
+    <Button
+        android:id="@+id/studentLoginButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/passwordInputLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Log In"
+        android:onClick="login"
+        tools:ignore="HardcodedText" />
+
+
+    <!-- Register option -->
+    <TextView
+        android:id="@+id/registerOption"
+        android:layout_width="278dp"
+        android:layout_height="72dp"
+        android:layout_below="@id/studentLoginButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:onClick="navigateToRegister"
+        android:padding="12dp"
+        android:text="@string/new_user_signup"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        tools:ignore="HardcodedText,TextContrastCheck,TextSizeCheck" />
+
+    <!-- Image at the bottom center -->
+    <ImageView
+        android:id="@+id/bottomImage"
+        android:layout_width="85dp"
+        android:layout_height="114dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/mentalhealth"
+        android:contentDescription="TODO"
+        tools:ignore="ContentDescription,HardcodedText" />
+
+    <!-- Back button image at the top left -->
+    <ImageView
+        android:id="@+id/backButton"
+        android:layout_width="51dp"
+        android:layout_height="96dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="586dp"
+        android:onClick="onBackPressed"
+        android:src="@drawable/ic_back_purple"
+        tools:ignore="ContentDescription,ImageContrastCheck,SpeakableTextPresentCheck" />
+
+</RelativeLayout>

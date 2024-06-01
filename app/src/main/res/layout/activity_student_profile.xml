@@ -1,0 +1,39 @@
+<!-- activity_student_profile.xml -->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A896B2">
+
+
+    <!-- Heart image at the top right -->
+    <ImageView
+        android:id="@+id/backButton"
+        android:layout_width="51dp"
+        android:layout_height="96dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="625dp"
+        android:src="@drawable/ic_back_purple" />
+
+    <ImageView
+        android:id="@+id/heartImage"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/heart"
+        android:contentDescription="Heart Icon" />
+
+    <include
+        android:id="@+id/includedProfileLayout"
+        layout="@layout/profile_layout"
+        android:layout_marginTop="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="620dp" />
+
+
+</RelativeLayout>

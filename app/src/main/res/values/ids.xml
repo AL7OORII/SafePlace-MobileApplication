@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="adminEmailInput" type="id" />
+    <item name="passwordInput" type="id" />
+    <item name="adminLoginButton" type="id" />
+    <item name="backButton" type="id" />
+    <item name="emailInputLayout" type="id" />
+    <item name="emailInput" type="id" />
+    <item name="passwordInputLayout" type="id" />
+    <item name="studentLoginButton" type="id" />
+    <item name="registerOption" type="id" />
+    <item name="topImage" type="id" />
+    <item name="studentNameInput" type="id" />
+    <item name="signUpButton" type="id" />
+    <item name="heartImage" type="id" />
+</resources>

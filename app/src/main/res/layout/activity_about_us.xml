@@ -1,0 +1,137 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A896B2">
+
+    <!-- Colored Header with Text Centered -->
+    <RelativeLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp">
+
+        <!-- Colored Header Background -->
+        <ImageView
+            android:id="@+id/headerBackground"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#542A9F"
+            android:contentDescription="@null"/>
+
+        <!-- Header Text -->
+        <TextView
+            android:id="@+id/header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/about_us"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <!-- Information Sections -->
+    <TextView
+        android:id="@+id/whoAreWe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/headerLayout"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="100dp"
+        android:background="#805F95"
+        android:text="Who Are We?"
+        android:textColor="#E3F2FD"
+        android:textSize="16sp"
+        tools:ignore="HardcodedText" /> <!-- Set a different background color -->
+
+    <TextView
+        android:id="@+id/whoAreWeDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/whoAreWe"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="A solo developer. This app was implemented for the mobile application module for Computer science degree."
+        android:textColor="#805F95"
+        android:textSize="14sp"
+        tools:ignore="HardcodedText,TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/whyUseOurApp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/whoAreWeDescription"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="#805F95"
+        android:text="Why Use Our App?"
+        android:textColor="#E3F2FD"
+        android:textSize="16sp"
+        tools:ignore="HardcodedText" /> <!-- Set a different background color -->
+
+    <TextView
+        android:id="@+id/whyUseOurAppDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/whyUseOurApp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="This app was developed to emphasize the importance of mental health. Seeking help when one needs to is an essential step when it comes to healing and getting better. So this app aims at making finding the right counselor much easier by offering a seamless user experience in the booking process and messaging counselors, and all these for free!"
+        android:textColor="#805F95"
+        android:textSize="14sp"
+        tools:ignore="HardcodedText,TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/aboutDeveloper"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/whyUseOurAppDescription"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="#805F95"
+        android:text="About Developer?"
+        android:textColor="#E3F2FD"
+        android:textSize="16sp"
+        tools:ignore="HardcodedText" /> <!-- Set a different background color -->
+
+    <TextView
+        android:id="@+id/aboutDeveloperDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/aboutDeveloper"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Horiya Al Sadi, 3rd year university student at the University of the West of England, Bristol."
+        android:textColor="#805F95"
+        android:textSize="14sp"
+        tools:ignore="HardcodedText,TextContrastCheck" />
+
+
+    <!-- Back button image at the bottom left -->
+    <ImageView
+        android:id="@+id/backButton"
+        android:layout_width="51dp"
+        android:layout_height="96dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="586dp"
+        android:contentDescription="@string/back_button_description"
+        android:onClick="goBack"
+        android:src="@drawable/ic_back_purple"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <!-- Image at Bottom Center -->
+    <ImageView
+        android:id="@+id/bottomCenterImage"
+        android:layout_width="97dp"
+        android:layout_height="89dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:contentDescription="@string/decorative_image"
+        android:src="@drawable/mentalhealth" />
+
+</RelativeLayout>

@@ -1,0 +1,52 @@
+<!-- activity_available_counselors.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A896B2">
+
+    <!-- Available Counselors Header -->
+    <RelativeLayout
+        android:id="@+id/availableCounselorsHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#542A9F"
+        android:padding="16dp">
+
+        <!-- Available Counselors Title -->
+        <TextView
+            android:id="@+id/availableCounselorsTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/available_counselors_title"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/backButton"
+        android:layout_width="51dp"
+        android:layout_height="96dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="539dp"
+        android:layout_below="@id/availableCounselorsHeader"
+        android:src="@drawable/ic_back_purple" />
+
+    <!-- RecyclerView for displaying counselors -->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/counselorsRecyclerView"
+        android:layout_width="344dp"
+        android:layout_height="486dp"
+        android:layout_below="@id/availableCounselorsHeader"
+        android:layout_marginTop="129dp"
+        android:padding="16dp"
+        android:scrollbars="vertical"
+        tools:listitem="@layout/item_counselor" />
+
+
+</RelativeLayout>

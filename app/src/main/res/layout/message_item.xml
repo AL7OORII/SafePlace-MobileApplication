@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <!-- Sender's Name -->
+    <TextView
+        android:id="@+id/tvSenderName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sender Name"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_alignParentStart="true"/>
+
+    <!-- Message Content -->
+    <TextView
+        android:id="@+id/tvMessageContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Message content goes here..."
+        android:textSize="16sp"
+        android:layout_below="@id/tvSenderName"
+        android:layout_marginTop="4dp"/>
+
+    <!-- Timestamp -->
+    <TextView
+        android:id="@+id/tvTimestamp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HH:mm"
+        android:textSize="14sp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignBottom="@id/tvMessageContent"/>
+
+</RelativeLayout>

@@ -1,0 +1,73 @@
+<!-- activity_add_time.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A896B2">
+
+    <!-- Add Time Header -->
+    <RelativeLayout
+        android:id="@+id/addTimeHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#542A9F"
+        android:padding="16dp">
+
+        <!-- Add Time Title -->
+        <TextView
+            android:id="@+id/addTimeTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Time"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+    <!-- Back button image at the bottom left -->
+
+    <!-- Input field for Date -->
+
+    <ImageView
+        android:id="@+id/backButton"
+        android:layout_width="51dp"
+        android:layout_height="96dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="551dp"
+        android:src="@drawable/ic_back_purple" />
+
+    <EditText
+        android:id="@+id/dateInput"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_below="@id/addTimeHeader"
+        android:layout_marginTop="120dp"
+        android:hint="Date"
+        android:inputType="date"
+        android:padding="12dp" />
+
+    <!-- Input field for Time -->
+    <EditText
+        android:id="@+id/timeInput"
+        android:layout_width="match_parent"
+        android:layout_height="109dp"
+        android:layout_below="@id/dateInput"
+        android:layout_marginTop="16dp"
+        android:hint="Time"
+        android:inputType="time"
+        android:padding="12dp" />
+
+    <!-- Add Button -->
+    <Button
+        android:id="@+id/addButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/timeInput"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="Add"
+        android:onClick="addTime"/>
+
+</RelativeLayout>

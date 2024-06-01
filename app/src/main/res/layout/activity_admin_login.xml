@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A896B2"
+    tools:context=".AdminLoginActivity">
+
+    <!-- Sentence about mental health -->
+    <TextView
+        android:id="@+id/mentalHealthSentence"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:text="Your mental health is just as important as your physical health"
+        android:textSize="14sp" />
+
+    <!-- Admin Email input field -->
+    <EditText
+        android:id="@+id/adminEmailInput"
+        android:layout_width="match_parent"
+        android:layout_height="97dp"
+        android:layout_below="@id/mentalHealthSentence"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:hint="Admin Email"
+        android:inputType="textEmailAddress"
+        android:padding="12dp" />
+
+    <!-- Password input field -->
+    <EditText
+        android:id="@+id/passwordInput"
+        android:layout_width="401dp"
+        android:layout_height="87dp"
+        android:layout_below="@id/adminEmailInput"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:padding="12dp" />
+
+    <!-- Log In button -->
+    <Button
+        android:id="@+id/adminLoginButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/passwordInput"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Log In"
+        android:onClick="login"/>
+
+    <!-- Image at the bottom center -->
+    <ImageView
+        android:id="@+id/bottomImage"
+        android:layout_width="98dp"
+        android:layout_height="132dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/mentalhealth" />
+
+    <!-- Back button image at the bottom left -->
+    <ImageView
+        android:id="@+id/backButton"
+        android:layout_width="51dp"
+        android:layout_height="96dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="586dp"
+        android:src="@drawable/ic_back_purple" />
+
+</RelativeLayout>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "112906140242",
+    "project_id": "safeplace-ba5fb",
+    "storage_bucket": "safeplace-ba5fb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:112906140242:android:7f0e8ec77d158b029f3d8b",
+        "android_client_info": {
+          "package_name": "com.example.ma"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDEI4w-HQ5-bMWjNEr23BvVyN3hwXgx-ls"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

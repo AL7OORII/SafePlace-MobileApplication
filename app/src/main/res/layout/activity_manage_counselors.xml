@@ -1,0 +1,66 @@
+<!-- activity_manage_counselors.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A896B2">
+
+    <!-- Manage Counselors Header -->
+    <RelativeLayout
+        android:id="@+id/manageCounselorsHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#542A9F"
+        android:padding="16dp">
+
+        <!-- Manage Counselors Title -->
+        <TextView
+            android:id="@+id/manageCounselorsTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Manage Counselors"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+    <!-- Back button image at the bottom left -->
+
+
+    <!-- Add Counselor Button -->
+    <ImageView
+        android:id="@+id/backButton"
+        android:layout_width="51dp"
+        android:layout_height="96dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="556dp"
+        android:contentDescription="@string/back_button_description"
+        android:onClick="goBackToAdminHome"
+        android:src="@drawable/ic_back_purple"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/addCounselorButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/manageCounselorsHeader"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="220dp"
+        android:onClick="addCounselor"
+        android:text="+ Add Counselor"/>
+
+    <!-- View Counselors Button -->
+    <Button
+        android:id="@+id/viewCounselorsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/addCounselorButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:onClick="viewCounselors"
+        android:text="View Counselors"/>
+
+</RelativeLayout>

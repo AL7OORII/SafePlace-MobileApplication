@@ -1,0 +1,80 @@
+<!-- activity_send_message.xml -->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A896B2">
+
+    <!-- Colored Header with Text Centered -->
+    <RelativeLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp">
+
+        <!-- Colored Header Background -->
+        <ImageView
+            android:id="@+id/headerBackground"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#533E60"
+            tools:ignore="ContentDescription" />
+
+        <!-- Header Text -->
+        <TextView
+            android:id="@+id/header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Send Message"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            tools:ignore="HardcodedText" />
+    </RelativeLayout>
+
+
+    <!-- Message Input -->
+    <EditText
+        android:id="@+id/messageInput"
+        android:layout_width="395dp"
+        android:layout_height="139dp"
+        android:layout_below="@id/headerLayout"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="16dp"
+        android:background="#FFFFFF"
+        android:hint="Your Message"
+        android:padding="8dp"
+        tools:ignore="HardcodedText,TextFields,TextContrastCheck"
+        android:autofillHints="" />
+
+    <!-- Send Button -->
+    <Button
+        android:id="@+id/sendButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/messageInput"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Send"
+        android:background="#533E60"
+        android:textColor="#FFFFFF"
+        android:padding="8dp"
+        tools:ignore="HardcodedText" />
+
+    <!-- Back button image at the bottom left -->
+    <ImageView
+        android:id="@+id/backButton"
+        android:layout_width="51dp"
+        android:layout_height="96dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginBottom="586dp"
+        android:src="@drawable/ic_back_purple"
+        tools:ignore="ContentDescription,ImageContrastCheck" />
+
+</RelativeLayout>

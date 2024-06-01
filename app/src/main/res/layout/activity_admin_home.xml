@@ -1,0 +1,83 @@
+<!-- activity_admin_home.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A896B2">
+
+    <!-- Admin Dashboard Header -->
+    <RelativeLayout
+        android:id="@+id/dashboardHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#542A9F"
+        android:padding="16dp">
+
+        <!-- Admin Dashboard Title -->
+        <TextView
+            android:id="@+id/dashboardTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Admin Dashboard"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+    <!-- Admin Dashboard Image -->
+    <ImageView
+        android:id="@+id/dashboardImage"
+        android:layout_width="123dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/dashboardHeader"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:src="@drawable/love"
+        android:contentDescription="@string/dashboard_image_description" />
+
+
+    <!-- Manage Counselors Button -->
+    <Button
+        android:id="@+id/manageCounselorsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dashboardImage"
+        android:layout_marginTop="50dp"
+        android:onClick="manageCounselors"
+        android:text="Manage Counselors"
+        android:layout_centerHorizontal="true"/>
+
+    <!-- Manage Appointments Button -->
+    <Button
+        android:id="@+id/manageAppointmentsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/manageCounselorsButton"
+        android:layout_marginTop="16dp"
+        android:onClick="manageAppointments"
+        android:text="Manage Appointments"
+        android:layout_centerHorizontal="true"/>
+
+    <!-- View Messages Button -->
+    <Button
+        android:id="@+id/viewMessagesButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/manageAppointmentsButton"
+        android:layout_marginTop="16dp"
+        android:text="View Messages"
+        android:layout_centerHorizontal="true"/>
+
+
+    <!-- Log Out Button -->
+    <Button
+        android:id="@+id/logOutButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/viewMessagesButton"
+        android:layout_marginTop="16dp"
+        android:onClick="logOut"
+        android:text="Log Out"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>

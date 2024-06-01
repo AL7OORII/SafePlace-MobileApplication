@@ -1,0 +1,84 @@
+<!-- activity_add_counselor.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A896B2">
+
+    <!-- Add Counselor Header -->
+    <RelativeLayout
+        android:id="@+id/addCounselorHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#542A9F"
+        android:padding="16dp">
+
+        <!-- Add Counselor Title -->
+        <TextView
+            android:id="@+id/addCounselorTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/add_counselor"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+
+    <!-- Counselor Name Input -->
+
+    <ImageView
+        android:id="@+id/backButton"
+        android:layout_width="51dp"
+        android:layout_height="96dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="550dp"
+        android:src="@drawable/ic_back_purple" />
+
+    <EditText
+        android:id="@+id/counselorNameInput"
+        android:layout_width="399dp"
+        android:layout_height="92dp"
+        android:layout_below="@id/addCounselorHeader"
+        android:layout_marginTop="100dp"
+        android:hint="Counselor Name"
+        android:inputType="text"
+        android:padding="12dp" />
+
+    <!-- Counselor Email Input -->
+    <EditText
+        android:id="@+id/counselorEmailInput"
+        android:layout_width="match_parent"
+        android:layout_height="101dp"
+        android:layout_below="@id/counselorNameInput"
+        android:layout_marginTop="16dp"
+        android:hint="Counselor Email"
+        android:inputType="textEmailAddress"
+        android:padding="12dp" />
+
+    <!-- Counselor Description Input -->
+    <EditText
+        android:id="@+id/counselorDescriptionInput"
+        android:layout_width="396dp"
+        android:layout_height="98dp"
+        android:layout_below="@id/counselorEmailInput"
+        android:layout_marginTop="16dp"
+        android:hint="Counselor Description"
+        android:inputType="textMultiLine"
+        android:lines="4"
+        android:padding="12dp" />
+
+    <!-- Add Button at the Bottom Center -->
+    <Button
+        android:id="@+id/addButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/counselorDescriptionInput"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Add"
+        android:onClick="addCounselor"/>
+
+</RelativeLayout>

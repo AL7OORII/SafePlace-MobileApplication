@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="#A896B2">
+
+
+    <!-- User image at the top center -->
+    <ImageView
+        android:id="@+id/profileImage"
+        android:layout_width="60dp"
+        android:layout_height="59dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:src="@drawable/user" />
+
+<!-- Table to display student information -->
+<TableLayout
+    android:id="@+id/studentInfoTable"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:layout_margin="16dp"
+    android:background="@drawable/table_border">
+
+    <!-- TableRow for Name -->
+    <TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Student ID:"
+            android:layout_margin="4dp" />
+        <TextView
+            android:id="@+id/studentIDText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp" />
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name:"
+            android:layout_margin="4dp" />
+        <TextView
+            android:id="@+id/studentNameText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp" />
+    </TableRow>
+
+    <!-- TableRow for Email -->
+    <TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email:"
+            android:layout_margin="4dp" />
+        <TextView
+            android:id="@+id/studentEmailText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp" />
+    </TableRow>
+</TableLayout>
+
+<!-- Delete Account button -->
+<Button
+    android:id="@+id/deleteAccountButton"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/studentInfoTable"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="20dp"
+    android:text="Delete Account"
+    android:onClick="deleteAccount" />
+</RelativeLayout>
