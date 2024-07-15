@@ -1,4 +1,5 @@
-Safe Place: Connecting Students with Therapists/Counselors
+#Safe Place
+Connecting Students with Therapists/Counselors
 Overview
 Safe Place is a mobile app aims to provide a platform for students to easily find and book appointments with therapists, counselors, and psychologists. Additionally, the app includes features for administrators to manage counselors' details, availability times, and bookings, as well as communication tools for students and counselors.
 
